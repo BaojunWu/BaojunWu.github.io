@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic"
+title: "Baojun Wu"
 author_profile: true
 redirect_from: 
   - /about/
