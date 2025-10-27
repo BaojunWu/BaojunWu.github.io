@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baojun Wu — Mathematics</title>
+  <meta name="description" content="Personal homepage of Baojun Wu — Liouville CFT, Random Geometry, Hyperbolic Geometry" />
+  <meta property="og:title" content="Baojun Wu — Mathematics" />
+  <meta property="og:description" content="Liouville CFT · Random Geometry · Hyperbolic Geometry" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card:#11172b;
+      --text: #e5e7eb;
+      --muted:#94a3b8;
+      --link:#93c5fd;
+      --accent:#22d3ee;
+      --chip:#1f2937;
+      --border:#22304c;
+    }
+    [data-theme="light"]{
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --text:#0f172a;
+      --muted:#475569;
+      --link:#1d4ed8;
+      --accent:#0891b2;
+      --chip:#e2e8f0;
+      --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text)}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:12px 0 8px 0}
+    .nav{display:flex;gap:16px;flex-wrap:wrap}
+    .nav a{padding:6px 10px;border-radius:999px;background:var(--chip);color:var(--text)}
+    .nav a:hover{opacity:.9}
+    .theme-btn{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:14px 0}
+    h1{font-size:32px;margin:0 0 4px 0;letter-spacing:.2px}
+    h2{font-size:22px;margin:0 0 10px 0;border-bottom:1px dashed var(--border);padding-bottom:6px}
+    h3{font-size:18px;margin:10px 0 6px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
+    .list{padding-left:18px}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--chip); border:1px solid var(--border); padding:2px 6px; border-radius:6px}
+    footer{padding:24px 0;color:var(--muted);font-size:14px}
+  </style>
+  <script>
+    const applyTheme = (t)=>{
+      document.documentElement.setAttribute('data-theme', t);
+      localStorage.setItem('theme', t);
+    };
+    document.addEventListener('DOMContentLoaded',()=>{
+      const pref = localStorage.getItem('theme');
+      if(pref){applyTheme(pref);} else {applyTheme('dark');}
+      document.getElementById('themeToggle').addEventListener('click',()=>{
+        const cur = document.documentElement.getAttribute('data-theme');
+        applyTheme(cur === 'dark' ? 'light' : 'dark');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Baojun Wu</h1>
+        <div class="muted">Postdoctoral Researcher, BICMR (Peking University)</div>
+      </div>
+      <div class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#pubs">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
+      </div>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I am a postdoctoral researcher at the <strong>Beijing International Center for Mathematical Research (BICMR)</strong>, Peking University.
+        My work centers on <em>Liouville conformal field theory (CFT)</em>, <em>Liouville quantum gravity (LQG)</em>, 
+        and their interfaces with probability, hyperbolic geometry, Schramm–Loewner evolution (SLE) and conformal loop ensembles (CLE).
+      </p>
+      <div class="chips">
+        <span class="chip">Liouville CFT</span>
+        <span class="chip">LQG</span>
+        <span class="chip">SLE/CLE</span>
+        <span class="chip">Hyperbolic geometry</span>
+        <span class="chip">Probability</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Appointments & Visits</h2>
+        <ul class="list">
+          <li><strong>BICMR, Peking University</strong> — Postdoctoral Researcher (2023–present)</li>
+          <li><strong>IHÉS</strong> — Visiting student (Jan–Feb 2023)</li>
+          <li><strong>Institute for Advanced Study (IAS)</strong> — Visiting student (Sep–Dec 2022)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Education</h2>
+        <ul class="list">
+          <li><strong>Ph.D., Mathematics</strong>, Université Aix–Marseille (2020–2023) — Advisor: Rémi Rhodes</li>
+          <li><strong>M.Sc., Probability</strong>, Université Paris–Saclay (2019–2020) — Mention: Très bien</li>
+          <li><strong>Normalien</strong>, École normale supérieure (Ulm) (2017–2020)</li>
+          <li><strong>B.Sc., Mathematics</strong>, Shandong University (2014–2018)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research Directions</h2>
+      <ol class="list">
+        <li><strong>Construction of Liouville Field Theory</strong> (especially boundary Liouville): Segal axioms, boundary bootstrap, representation-theoretic aspects.</li>
+        <li><strong>Liouville Quantum Gravity & Random Geometry</strong>: SLE loop measure, CLE integrability, imaginary DOZZ formula.</li>
+        <li><strong>Liouville CFT and 3D Virasoro TQFT</strong>: semiclassical limits and connections to hyperbolic geometry.
+        </li>
+      </ol>
+    </section>
+
+    <section id="pubs" class="card">
+      <h2>Publications & Preprints (selected)</h2>
+      <ul class="list">
+        <li><em>Conformal Bootstrap on the Annulus in Liouville CFT</em>. arXiv: <a href="https://arxiv.org/abs/2203.11830">2203.11830</a>.</li>
+        <li>(with G. Baverez) <em>Higher equations of motion at level 2 in Liouville CFT</em>. arXiv: <a href="https://arxiv.org/abs/2312.13900">2312.13900</a>.</li>
+        <li>(with G. Baverez) <em>Irreducibility of Virasoro representations in Liouville CFT</em>. arXiv: <a href="https://arxiv.org/abs/2312.07344">2312.07344</a>.</li>
+        <li>(with C. Guillarmou, R. Rhodes) <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms</em>. arXiv: <a href="https://arxiv.org/abs/2408.13133">2408.13133</a>.</li>
+        <li>(with M. Ang, G. Cai, X. Sun) <em>SLE Loop Measure and Liouville Quantum Gravity</em>. arXiv: <a href="https://arxiv.org/abs/2409.16547">2409.16547</a>.</li>
+        <li>(with M. Ang, G. Cai, X. Sun) <em>Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond</em>. arXiv: <a href="https://arxiv.org/abs/2107.01788">2107.01788</a>.</li>
+      </ul>
+    </section>
+
+    <section id="talks" class="card">
+      <h2>Selected Talks</h2>
+      <ul class="list">
+        <li>Random Geometry and Statistical Physics, University of Pennsylvania (Oct 2022): “Conformal loop ensemble and matrix model”.</li>
+        <li>1st NYUSH–Peking–Westlake Joint Conference on Probability (Mar 2024): “Irreducibility of Liouville theory”.</li>
+        <li>Probability in Conformal Field Theory, Bernoulli Center (EPFL) (Apr 2024): “Proof of the Delfino–Viti conjecture”.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:wubaojunmathe@outlook.com">wubaojunmathe@outlook.com</a>
+        <br>BICMR, Peking University
+      </p>
+      <p class="muted">CV: <a href="cv.pdf">download (PDF)</a> · Last updated: 27 Oct 2025</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Baojun Wu. Built with a single static HTML file.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Baojun Wu",
+    "url": "",
+    "jobTitle": "Postdoctoral Researcher",
+    "affiliation": {"@type":"Organization","name":"BICMR, Peking University"},
+    "email": "mailto:wubaojunmathe@outlook.com",
+    "knowsAbout": ["Liouville conformal field theory","Liouville quantum gravity","SLE","CLE","Hyperbolic geometry","Probability"],
+    "sameAs": []
+  }
+  </script>
+</body>
+</html>
