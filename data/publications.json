@@ -1,0 +1,88 @@
+[
+  {
+    "id": "wu2022annulus",
+    "title": "Conformal Bootstrap on the Annulus in Liouville CFT",
+    "authors": "Baojun Wu",
+    "venue": "arXiv:2203.11830",
+    "year": 2022,
+    "type": "preprint",
+    "arxiv": "2203.11830",
+    "doi": "",
+    "tags": [
+      "Liouville CFT"
+    ],
+    "bibtex": "@article{Wu2022AnnulusBootstrap,\n  title={Conformal Bootstrap on the Annulus in Liouville CFT},\n  author={Baojun Wu},\n  journal={arXiv preprint arXiv:2203.11830},\n  year={2022}\n}"
+  },
+  {
+    "id": "baverezwu2023higher",
+    "title": "Higher equations of motion at level 2 in Liouville CFT",
+    "authors": "Guillaume Baverez and Baojun Wu",
+    "venue": "arXiv:2312.13900",
+    "year": 2023,
+    "type": "preprint",
+    "arxiv": "2312.13900",
+    "doi": "",
+    "tags": [
+      "Liouville CFT"
+    ],
+    "bibtex": "@article{BaverezWu2023HigherEOM,\n  title={Higher equations of motion at level 2 in Liouville CFT},\n  author={Guillaume Baverez and Baojun Wu},\n  journal={arXiv preprint arXiv:2312.13900},\n  year={2023}\n}"
+  },
+  {
+    "id": "baverezwu2023irr",
+    "title": "Irreducibility of Virasoro representations in Liouville CFT",
+    "authors": "Guillaume Baverez and Baojun Wu",
+    "venue": "arXiv:2312.07344",
+    "year": 2023,
+    "type": "preprint",
+    "arxiv": "2312.07344",
+    "doi": "",
+    "tags": [
+      "Liouville CFT"
+    ],
+    "bibtex": "@article{BaverezWu2023Irreducibility,\n  title={Irreducibility of Virasoro representations in Liouville CFT},\n  author={Guillaume Baverez and Baojun Wu},\n  journal={arXiv preprint arXiv:2312.07344},\n  year={2023}\n}"
+  },
+  {
+    "id": "grw2024boundary",
+    "title": "Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms",
+    "authors": "Colin Guillarmou, R\\'emi Rhodes, Baojun Wu",
+    "venue": "arXiv:2408.13133",
+    "year": 2024,
+    "type": "preprint",
+    "arxiv": "2408.13133",
+    "doi": "",
+    "tags": [
+      "Liouville CFT"
+    ],
+    "bibtex": "@article{GuillarmouRhodesWu2024BoundarySegal,\n  title={Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms},\n  author={Colin Guillarmou and R\\'emi Rhodes and Baojun Wu},\n  journal={arXiv preprint arXiv:2408.13133},\n  year={2024}\n}"
+  },
+  {
+    "id": "angcaisunwu2024sle",
+    "title": "SLE Loop Measure and Liouville Quantum Gravity",
+    "authors": "Matthew Ang, Guoxu Cai, Xin Sun, Baojun Wu",
+    "venue": "arXiv:2409.16547",
+    "year": 2024,
+    "type": "preprint",
+    "arxiv": "2409.16547",
+    "doi": "",
+    "tags": [
+      "LQG",
+      "SLE/CLE"
+    ],
+    "bibtex": "@article{AngCaiSunWu2024SLELQG,\n  title={SLE Loop Measure and Liouville Quantum Gravity},\n  author={Matthew Ang and Guoxu Cai and Xin Sun and Baojun Wu},\n  journal={arXiv preprint arXiv:2409.16547},\n  year={2024}\n}"
+  },
+  {
+    "id": "angcaisunwu2021imagDOZZ",
+    "title": "Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond",
+    "authors": "Matthew Ang, Guoxu Cai, Xin Sun, Baojun Wu",
+    "venue": "arXiv:2107.01788",
+    "year": 2021,
+    "type": "preprint",
+    "arxiv": "2107.01788",
+    "doi": "",
+    "tags": [
+      "CLE",
+      "Liouville CFT"
+    ],
+    "bibtex": "@article{AngCaiSunWu2021ImaginaryDOZZ,\n  title={Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond},\n  author={Matthew Ang and Guoxu Cai and Xin Sun and Baojun Wu},\n  journal={arXiv preprint arXiv:2107.01788},\n  year={2021}\n}"
+  }
+]
