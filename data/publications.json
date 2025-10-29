@@ -1,10 +1,22 @@
 [
-  {id:'wu2022annulus', title:'Conformal Bootstrap on the Annulus in Liouville CFT', authors:'Baojun Wu', venue:'arXiv:2203.11830', year:2022, type:'submitted', arxiv:'2203.11830', doi:'', tags:['Liouville CFT'], bibtex:`@article{Wu2022AnnulusBootstrap,
-  title={Conformal Bootstrap on the Annulus in Liouville CFT},
-  author={Baojun Wu},
-  journal={arXiv preprint arXiv:2203.11830},
-  year={2022}
-}`},
+{
+  "id": "wu2022annulus",
+  "title": "Conformal Bootstrap on the Annulus in Liouville CFT",
+  "authors": "Baojun Wu",
+  "venue": "arXiv:2203.11830",
+  "year": 2022,
+  "type": "submitted",
+  "arxiv": "2203.11830",
+  "doi": "",
+  "pdf": "",
+  "tags": ["Liouville CFT"],
+  "abstract": "This paper is the first of a series of works on the conformal bootstrap in Liouville conformal field theory (CFT) with boundaries. We focus here on the case of the annulus with two boundary insertions, each of which lies on the different connected components of the boundary. In the course of proving the bootstrap formula, we established several properties on the corresponding annulus conformal blocks:
+1) we show that they converge everywhere on the spectral line and they are continuous with respect to the spectrum and the primary weights.
+2) we relate them to their torus counterparts by rigorously implementing Cardy's doubling trick for boundary CFT,
+3) we solve a conjecture of Martinec on the annulus partition function,
+4) we also extend the bootstrap formula to the one-point case.
+As an application of our bootstrap result, we give an exact formula for the bosonic LQG partition function of the annulus when \gamma\in (0,2). Our paper serves as a key ingredient in the recent derivation of the random moduli for the Brownian annulus by Ang, Remy, and Sun (2022). We also solve several other conjectures relate to torus conformal blocks which arise from physics literature."
+},
         {id:'baverezwu2023higher', title:'Higher equations of motion at level 2 in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.13900', year:2023, type:'submitted', arxiv:'2312.13900', doi:'', tags:['Liouville CFT'], bibtex:`@article{BaverezWu2023HigherEOM,
   title={Higher equations of motion at level 2 in Liouville CFT},
   author={Guillaume Baverez and Baojun Wu},
