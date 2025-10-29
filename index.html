@@ -4,22 +4,43 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baojun Wu — Mathematics</title>
-  <meta name="description" content="Baojun Wu — Liouville CFT, Liouville Quantum Gravity, Random Geometry" />
+  <meta name="description" content="Personal homepage of Baojun Wu — Liouville CFT, Random Geometry, Hyperbolic Geometry" />
   <meta property="og:title" content="Baojun Wu — Mathematics" />
-  <meta property="og:description" content="Liouville CFT · SLE/CLE · Statistical Physics" />
+  <meta property="og:description" content="Liouville CFT · Random Geometry · Hyperbolic Geometry" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
   <meta name="theme-color" content="#0f172a" />
   <style>
-    :root{ --bg:#0b1020; --card:#11172b; --text:#e5e7eb; --muted:#94a3b8; --link:#93c5fd; --chip:#1f2937; --border:#22304c; }
-    [data-theme="light"]{ --bg:#ffffff; --card:#f8fafc; --text:#0f172a; --muted:#475569; --link:#1d4ed8; --chip:#e2e8f0; --border:#e5e7eb; }
+    :root{
+      --bg: #0b1020;      /* dark slate */
+      --card:#11172b;
+      --text: #e5e7eb;    /* gray-200 */
+      --muted:#94a3b8;    /* slate-400 */
+      --link:#93c5fd;     /* sky-300 */
+      --accent:#22d3ee;   /* cyan-400 */
+      --chip:#1f2937;     /* gray-800 */
+      --border:#22304c;
+    }
+    [data-theme="light"]{
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --text:#0f172a;
+      --muted:#475569;
+      --link:#1d4ed8;
+      --accent:#0891b2;
+      --chip:#e2e8f0;
+      --border:#e5e7eb;
+    }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text)}
-    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
     .container{max-width:980px;margin:0 auto;padding:24px}
     header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:12px 0 8px 0}
     .nav{display:flex;gap:16px;flex-wrap:wrap}
     .nav a{padding:6px 10px;border-radius:999px;background:var(--chip);color:var(--text)}
+    .nav a:hover{opacity:.9}
     .theme-btn{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:14px 0}
     h1{font-size:32px;margin:0 0 4px 0;letter-spacing:.2px}
@@ -28,29 +49,41 @@
     .muted{color:var(--muted)}
     .chips{display:flex;flex-wrap:wrap;gap:8px}
     .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px} @media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
     .list{padding-left:18px}
-    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px}
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 12px 0}
-    .toolbar input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text)}
-    .toolbar select,.toolbar button{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text);cursor:pointer}
-    .pub{padding:12px 0;border-top:1px dashed var(--border)} .pub:first-child{border-top:none}
-    .pub h3{margin:0 0 4px 0;font-size:16px}
-    .authors,.venue{color:var(--muted)}
-    .actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--chip); border:1px solid var(--border); padding:2px 6px; border-radius:6px}
     .photo-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
     .photo-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px}
     .photo-card img{width:100%;height:280px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
-    .figure{margin:0} .figcap{font-size:14px;color:var(--muted);margin-top:6px}
-    .social{display:flex;gap:10px;margin-top:6px}
+    .figure{margin:0}
+    .figcap{font-size:14px;color:var(--muted);margin-top:6px}
+  
     footer{padding:24px 0;color:var(--muted);font-size:14px}
-  </style>
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 12px 0}
+  .toolbar input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text)}
+  .toolbar select,.toolbar button{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text);cursor:pointer}
+  .pub{padding:12px 0;border-top:1px dashed var(--border)}
+  .pub:first-child{border-top:none}
+  .pub h3{margin:0 0 4px 0;font-size:16px}
+  .authors,.venue{color:var(--muted)}
+  .actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+  .social{display:flex;gap:10px;margin-top:6px}
+  .abstract{margin-top:8px;background:var(--chip);border:1px solid var(--border);padding:10px;border-radius:10px}
+</style>
   <script>
-    const applyTheme = (t)=>{ document.documentElement.setAttribute('data-theme', t); localStorage.setItem('theme', t); };
+    // Theme toggle with localStorage
+    const applyTheme = (t)=>{
+      document.documentElement.setAttribute('data-theme', t);
+      localStorage.setItem('theme', t);
+    };
     document.addEventListener('DOMContentLoaded',()=>{
-      const pref = localStorage.getItem('theme'); applyTheme(pref || 'dark');
+      const pref = localStorage.getItem('theme');
+      if(pref){applyTheme(pref);} else {applyTheme('dark');}
       document.getElementById('themeToggle').addEventListener('click',()=>{
-        const cur = document.documentElement.getAttribute('data-theme'); applyTheme(cur === 'dark' ? 'light' : 'dark');
+        const cur = document.documentElement.getAttribute('data-theme');
+        applyTheme(cur === 'dark' ? 'light' : 'dark');
       });
     });
   </script>
@@ -64,7 +97,7 @@
         <div class="social">
           <a title="Google Scholar" href="#" aria-label="Google Scholar">GS</a>
           <a title="ORCID" href="#" aria-label="ORCID">ORCID</a>
-          <a title="arXiv" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Wu%2C+Baojun&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first" aria-label="arXiv">arXiv</a>
+          <a title="arXiv" href="https://arxiv.org/a/" aria-label="arXiv">arXiv</a>
           <a title="GitHub" href="https://github.com/" aria-label="GitHub">GitHub</a>
         </div>
       </div>
@@ -74,8 +107,8 @@
         <a href="#research">Research</a>
         <a href="#pubs">Publications</a>
         <a href="#talks">Talks</a>
-        <a href="#photos">Photos</a>
-        <a href="#teaching">Teaching</a>
+                <a href="#photos">Photos</a>
+<a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
         <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
       </div>
@@ -85,8 +118,8 @@
       <h2>About</h2>
       <p>
         I am a postdoctoral researcher at the <strong>Beijing International Center for Mathematical Research (BICMR)</strong>, Peking University.
-        My work centers on <em>probabilistic approach to conformal field theory</em> and <em> random geometry</em>, 
-        and their interfaces with general math.
+        My work centers on <em>Liouville conformal field theory (CFT)</em>, <em>Liouville quantum gravity (LQG)</em>, 
+        and their interfaces with probability, hyperbolic geometry, Schramm–Loewner evolution (SLE) and conformal loop ensembles (CLE).
       </p>
       <div class="chips">
         <span class="chip">Liouville CFT</span>
@@ -97,17 +130,9 @@
       </div>
     </section>
 
-    <section id="To appear" class="card">
-      <h2>News</h2>
-      <ul class="list">
-        <li><strong>Oct 2025</strong> — New preprint: <em>SLE Loop Measure and Liouville Quantum Gravity</em> (arXiv:2409.16547).</li>
-        <li><strong>Aug 2025</strong> — Preprint: <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1</em> (arXiv:2408.13133).</li>
-      </ul>
-    </section>
-
     <section class="grid">
       <div class="card">
-        <h2> Work Experience & Visits</h2>
+        <h2>Appointments & Visits</h2>
         <ul class="list">
           <li><strong>BICMR, Peking University</strong> — Postdoctoral Researcher (2023–present)</li>
           <li><strong>IHÉS</strong> — Visiting student (Jan–Feb 2023)</li>
@@ -125,6 +150,14 @@
       </div>
     </section>
 
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="list">
+        <li><strong>Oct 2025</strong> — New preprint: <em>SLE Loop Measure and Liouville Quantum Gravity</em> (arXiv:2409.16547).</li>
+        <li><strong>Aug 2025</strong> — Preprint: <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1</em> (arXiv:2408.13133).</li>
+      </ul>
+    </section>
+
     <section id="research" class="card">
       <h2>Research Directions</h2>
       <ol class="list">
@@ -138,7 +171,6 @@
     <section id="pubs" class="card">
       <h2>Publications & Preprints</h2>
       <div class="toolbar">
-        <input id="pubSearch" type="search" placeholder="Search title/authors/venue" />
         <select id="pubFilter">
           <option value="all">All types</option>
           <option value="journal">Journal</option>
@@ -149,7 +181,6 @@
           <option value="year-asc">Sort: Year ↑</option>
           <option value="title-asc">Sort: Title A→Z</option>
         </select>
-        <button id="toggleBib">Toggle BibTeX</button>
       </div>
       <div id="pubList"></div>
       <p class="muted">Edit <code>data/publications.json</code> to update this list (or modify the inline fallback dataset in the script at the end of the file).</p>
@@ -168,7 +199,7 @@
       <h2>Photos</h2>
       <div class="photo-grid">
         <figure class="photo-card figure">
-          <img loading="lazy" src="images/baojun wu.png" alt="Portrait of Baojun Wu">
+          <img loading="lazy" src="images/portrait.jpg" alt="Portrait of Baojun Wu">
           <figcaption class="figcap">Portrait (replace images/portrait.jpg)</figcaption>
         </figure>
         <figure class="photo-card figure">
@@ -180,15 +211,7 @@
           <figcaption class="figcap">Visit at IHÉS (replace images/visit-ihes.jpg)</figcaption>
         </figure>
       </div>
-      <p class="muted">Put images in <code>/images/</code> or change the <code>src</code> paths above.</p>
-    </section>
-
-    <section id="teaching" class="card">
-      <h2>Teaching</h2>
-      <ul class="list">
-        <li>(Sample) Probability and Measure Theory — TA, 2023–2024.</li>
-        <li>(Sample) Topics in Conformal Field Theory — Guest lectures, 2024.</li>
-      </ul>
+      <p class="muted">将你的照片放入 <code>/images/</code> 文件夹并使用上面的文件名即可显示；或修改 <code>src</code> 路径。</p>
     </section>
 
     <section id="contact" class="card">
@@ -197,7 +220,7 @@
         Email: <a href="mailto:wubaojunmathe@outlook.com">wubaojunmathe@outlook.com</a>
         <br>BICMR, Peking University
       </p>
-      <p class="muted">CV: <a href="cv.pdf">download (PDF)</a> · Last updated: 27 Oct 2025</p>
+      <p class="muted">CV: <a href="cv.pdf">download (PDF)</a> &middot; Last updated: 27 Oct 2025</p>
     </section>
 
     <footer>
@@ -207,18 +230,31 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Publications renderer -->
+  
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Baojun Wu",
+    "url": "",
+    "jobTitle": "Postdoctoral Researcher",
+    "affiliation": {"@type":"Organization","name":"BICMR, Peking University"},
+    "email": "mailto:wubaojunmathe@outlook.com",
+    "knowsAbout": ["Liouville conformal field theory","Liouville quantum gravity","SLE","CLE","Hyperbolic geometry","Probability"],
+    "sameAs": []
+  }
+  </script>
   <script>
+    // ---- Publications renderer (no search, no BibTeX toggle; per-item Abstract) ----
     (function(){
       const listEl = document.getElementById('pubList');
-      const searchEl = document.getElementById('pubSearch');
+      if(!listEl) return;
       const filterEl = document.getElementById('pubFilter');
       const sortEl = document.getElementById('pubSort');
-      const toggleBibEl = document.getElementById('toggleBib');
-      let showBib = false;
+
       const fallback = [
-        {id:'wu2022annulus', title:'Conformal Bootstrap on the Annulus in Liouville CFT', authors:'Baojun Wu', venue:'arXiv:2203.11830', year:2022, type:'submitted', arxiv:'2203.11830', doi:'', tags:['Liouville CFT'], bibtex:`@article{Wu2022AnnulusBootstrap,
+         {id:'wu2022annulus', title:'Conformal Bootstrap on the Annulus in Liouville CFT', authors:'Baojun Wu', venue:'arXiv:2203.11830', year:2022, type:'submitted', arxiv:'2203.11830', doi:'', tags:['Liouville CFT'], bibtex:`@article{Wu2022AnnulusBootstrap,
   title={Conformal Bootstrap on the Annulus in Liouville CFT},
   author={Baojun Wu},
   journal={arXiv preprint arXiv:2203.11830},
@@ -273,53 +309,69 @@
   year={2021}
 }`}
       ];
-      async function load(){ try{ const r=await fetch('data/publications.json',{cache:'no-store'}); if(!r.ok) throw 0; return await r.json(); }catch{ return fallback; } }
-      function matches(q, x){ if(!q) return true; q=q.toLowerCase(); return [x.title,x.authors,x.venue,(x.tags||[]).join(' ')].some(s=> (s||'').toLowerCase().includes(q)); }
-      function bySort(key){ switch(key){ case 'year-asc': return (a,b)=> a.year-b.year || a.title.localeCompare(b.title); case 'title-asc': return (a,b)=> a.title.localeCompare(b.title); default: return (a,b)=> b.year-a.year || a.title.localeCompare(b.title);} }
+
+      async function load(){
+        try{
+          const res = await fetch('data/publications.json',{cache:'no-store'});
+          if(!res.ok) throw new Error('no json');
+          return await res.json();
+        }catch(e){
+          return fallback;
+        }
+      }
+
+      function bySort(key){
+        switch(key){
+          case 'year-asc': return (a,b)=> a.year-b.year || a.title.localeCompare(b.title);
+          case 'title-asc': return (a,b)=> a.title.localeCompare(b.title);
+          default: return (a,b)=> b.year-a.year || a.title.localeCompare(b.title);
+        }
+      }
+
       function renderItem(p){
-        const doi = p.doi ? `<a class="badge" href="https://doi.org/${p.doi}">DOI</a>` : '';
-        const arxiv = p.arxiv ? `<a class="badge" href="https://arxiv.org/abs/${p.arxiv}">arXiv:${p.arxiv}</a>` : '';
-        const pdf = p.pdf ? `<a class="badge" href="${p.pdf}">PDF</a>` : '';
-        const tags = (p.tags||[]).map(t=>`<span class="chip">${t}</span>`).join(' ');
-        const bib = showBib ? `<pre class="kbd" style="white-space:pre-wrap;overflow:auto">${p.bibtex||''}</pre>` : '';
-        return `<div class="pub">
+        const doi = p.doi ? `<a class=\"badge\" href=\"https://doi.org/${p.doi}\">DOI</a>` : '';
+        const arxiv = p.arxiv ? `<a class=\"badge\" href=\"https://arxiv.org/abs/${p.arxiv}\">arXiv:${p.arxiv}</a>` : '';
+        const pdf = p.pdf ? `<a class=\"badge\" href=\"${p.pdf}\">PDF</a>` : '';
+        const tags = (p.tags||[]).map(t=>`<span class=\"chip\">${t}</span>`).join(' ');
+        const absPanel = `<div class=\"abstract\" id=\"abs-${p.id}\" hidden>${p.abstract||'Abstract coming soon.'}</div>`;
+        return `<div class=\"pub\">
 <h3>${p.title}</h3>
-<div class="authors">${p.authors}</div>
-<div class="venue">${p.venue} · ${p.year} · <span class="badge">${p.type}</span> ${doi} ${arxiv} ${pdf}</div>
-<div class="actions"><button data-id="${p.id}" class="copyBib">Copy BibTeX</button> ${tags}</div>${bib}
+<div class=\"authors\">${p.authors}</div>
+<div class=\"venue\">${p.venue} · ${p.year} · <span class=\"badge\">${p.type}</span> ${doi} ${arxiv} ${pdf}</div>
+<div class=\"actions\"><button data-id=\"${p.id}\" class=\"toggleAbs\">Abstract</button> ${tags}</div>${absPanel}
 </div>`;
       }
-      function attachCopy(list){ list.querySelectorAll('.copyBib').forEach(btn=>{ btn.addEventListener('click',()=>{ const id=btn.getAttribute('data-id'); const p=data.find(x=>x.id===id); if(p&&p.bibtex){ navigator.clipboard.writeText(p.bibtex); btn.textContent='Copied!'; setTimeout(()=>btn.textContent='Copy BibTeX',1200);} }); }); }
+
+      function attach(list){
+        list.querySelectorAll('.toggleAbs').forEach(btn=>{
+          btn.addEventListener('click',()=>{
+            const id = btn.getAttribute('data-id');
+            const panel = document.getElementById('abs-'+id);
+            if(panel){
+              const isHidden = panel.hasAttribute('hidden');
+              if(isHidden){ panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden',''); }
+              btn.textContent = isHidden ? 'Hide abstract' : 'Abstract';
+            }
+          });
+        });
+      }
+
       let data = [];
       load().then(items=>{
         data = items;
         const rerender = ()=>{
-          const q = searchEl.value.trim();
           const type = filterEl.value;
-          const sorted = data.filter(p=> matches(q,p) && (type==='all' || p.type===type)).sort(bySort(sortEl.value));
+          const sorted = data
+            .filter(p=> (type==='all' || p.type===type))
+            .sort(bySort(sortEl.value));
           listEl.innerHTML = sorted.map(renderItem).join('');
-          attachCopy(listEl);
+          attach(listEl);
         };
-        searchEl.addEventListener('input', rerender);
         filterEl.addEventListener('change', rerender);
         sortEl.addEventListener('change', rerender);
-        toggleBibEl.addEventListener('click', ()=>{ showBib = !showBib; rerender(); });
         rerender();
       });
     })();
-  </script>
-
-  <!-- Person structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Baojun Wu",
-    "jobTitle": "Postdoctoral Researcher",
-    "affiliation": {"@type":"Organization","name":"BICMR, Peking University"},
-    "email": "mailto:wubaojunmathe@outlook.com",
-    "knowsAbout": ["Liouville conformal field theory","Liouville quantum gravity","SLE","CLE","Hyperbolic geometry","Probability"]
-  }
   </script>
 </body>
 </html>
