@@ -36,12 +36,19 @@
   venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', 
   doi:'', tags:['LQG','SLE/CLE','statistical physics'],
 "abstract": Recently, Ang--Cai--Sun--Wu (2024) determined the three-point connectivity constant for two-dimensional critical percolation, confirming a prediction of Delfino and Viti (2010). In this paper, we address the analogous problem for planar critical q-state Potts spin clusters. We introduce a continuum three-point connectivity constant and compute it explicitly. Under the scaling-limit conjecture for Potts spin clusters, this quantity coincides with the scaling limit of the properly normalized probability that three points lie in the same spin cluster. The resulting formula agrees with the imaginary DOZZ formula up to an explicit q-dependent constant with a geometric interpretation. This answers a question from Delfino--Picco--Santachiara--Viti (2013). The proof exploits the coupling between CLE and LQG, together with the BCLE descriptions of q-state Potts scaling limits due to Miller--Sheffield--Werner (2017) and Köhler-Schindler and Lehmkühler (2025).},
-        {id:'liuwuzhuang', title:'Mixing rate exponent of planar Fortuin-Kasteleyn percolation', authors:'Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2502.09950', year:2025, type:'submitted', arxiv:'2502.09950', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{liuwuzhuang,
-  title={Mixing rate exponent of planar Fortuin-Kasteleyn percolation},
-  author={Haoyu Liu, Baojun Wu, Zijie Zhuang},
-  journal={arXiv preprint arXiv:2502.09950},
-  year={2025}
-}`},
+        {
+  "id": "liu-wu-zhuang-2025-mixing-fk",
+  "title": "Mixing rate exponent of planar Fortuin–Kasteleyn percolation",
+  "authors": "Haoyu Liu, Baojun Wu, Zijie Zhuang",
+  "venue": "arXiv:2502.09950",
+  "year": 2025,
+  "type": "preprint",
+  "arxiv": "2502.09950",
+  "doi": "",
+  "pdf": "",
+  "tags": ["LQG", "SLE/CLE", "statistical physics"],
+  "abstract": "Duminil-Copin and Manolescu (2022) recently proved the scaling relations for planar Fortuin-Kasteleyn (FK) percolation. In particular, they showed that the one-arm exponent and the mixing rate exponent are sufficient to derive the other near-critical exponents. The scaling limit of critical FK percolation is conjectured to be a conformally invariant random collection of loops called the conformal loop ensemble (CLE). In this paper, we define the CLE analog of the mixing rate exponent. Assuming the convergence of FK percolation to CLE, we show that the mixing rate exponent for FK percolation agrees with that of CLE. We prove that the CLE_\kappa mixing rate exponent equals \frac{3 \kappa}{8}-1, thereby answering Question 3 of Duminil-Copin and Manolescu (2022). The derivation of the CLE exponent is based on an exact formula for the Radon-Nikodym derivative between the marginal laws of the odd-level and even-level CLE loops, which is obtained from the coupling between Liouville quantum gravity and CLE."
+}
          {id:'liumingsunwuyang', title:'Turaev-Viro invariant from the modular double of Uq(sl(2;R))', authors:'Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang', venue:'arXiv:2508.05120', year:2025, type:'submitted', arxiv:'2508.05120', doi:'', tags:['Liouville CFT','TQFT','hyperbolic geometry'], bibtex:`@article{liumingsunwuyang,
   title={Turaev-Viro invariant from the modular double of Uq(sl(2;R))},
   author={Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang},
