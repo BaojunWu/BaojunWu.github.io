@@ -4,43 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baojun Wu — Mathematics</title>
-  <meta name="description" content="Personal homepage of Baojun Wu — Liouville CFT, Random Geometry, Hyperbolic Geometry" />
+  <meta name="description" content="Baojun Wu — Liouville CFT, LQG, Random Geometry" />
   <meta property="og:title" content="Baojun Wu — Mathematics" />
-  <meta property="og:description" content="Liouville CFT · Random Geometry · Hyperbolic Geometry" />
+  <meta property="og:description" content="Liouville CFT · LQG · Random Geometry · Hyperbolic Geometry" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
   <meta name="theme-color" content="#0f172a" />
   <style>
     :root{
-      --bg: #0b1020;      /* dark slate */
-      --card:#11172b;
-      --text: #e5e7eb;    /* gray-200 */
-      --muted:#94a3b8;    /* slate-400 */
-      --link:#93c5fd;     /* sky-300 */
-      --accent:#22d3ee;   /* cyan-400 */
-      --chip:#1f2937;     /* gray-800 */
-      --border:#22304c;
+      --bg:#0b1020; --card:#11172b; --text:#e5e7eb; --muted:#94a3b8;
+      --link:#93c5fd; --chip:#1f2937; --border:#22304c;
     }
     [data-theme="light"]{
-      --bg:#ffffff;
-      --card:#f8fafc;
-      --text:#0f172a;
-      --muted:#475569;
-      --link:#1d4ed8;
-      --accent:#0891b2;
-      --chip:#e2e8f0;
-      --border:#e5e7eb;
+      --bg:#ffffff; --card:#f8fafc; --text:#0f172a; --muted:#475569;
+      --link:#1d4ed8; --chip:#e2e8f0; --border:#e5e7eb;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text)}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:980px;margin:0 auto;padding:24px}
-    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:12px 0 8px 0}
-    .nav{display:flex;gap:16px;flex-wrap:wrap}
+    header{display:flex;gap:20px;align-items:flex-start;justify-content:space-between;padding:12px 0 8px 0}
+    .header-right{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    .nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
     .nav a{padding:6px 10px;border-radius:999px;background:var(--chip);color:var(--text)}
-    .nav a:hover{opacity:.9}
     .theme-btn{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:14px 0}
     h1{font-size:32px;margin:0 0 4px 0;letter-spacing:.2px}
@@ -49,41 +35,25 @@
     .muted{color:var(--muted)}
     .chips{display:flex;flex-wrap:wrap;gap:8px}
     .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px} @media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
     .list{padding-left:18px}
-    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--chip); border:1px solid var(--border); padding:2px 6px; border-radius:6px}
-    .photo-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
-    .photo-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px}
-    .photo-card img{width:100%;height:280px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
-    .figure{margin:0}
-    .figcap{font-size:14px;color:var(--muted);margin-top:6px}
-  
-    footer{padding:24px 0;color:var(--muted);font-size:14px}
     .badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px}
-  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 12px 0}
-  .toolbar input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text)}
-  .toolbar select,.toolbar button{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text);cursor:pointer}
-  .pub{padding:12px 0;border-top:1px dashed var(--border)}
-  .pub:first-child{border-top:none}
-  .pub h3{margin:0 0 4px 0;font-size:16px}
-  .authors,.venue{color:var(--muted)}
-  .actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-  .social{display:flex;gap:10px;margin-top:6px}
-  .abstract{margin-top:8px;background:var(--chip);border:1px solid var(--border);padding:10px;border-radius:10px}
-</style>
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 12px 0}
+    .toolbar select{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--chip);color:var(--text);cursor:pointer}
+    .pub{padding:12px 0;border-top:1px dashed var(--border)} .pub:first-child{border-top:none}
+    .pub h3{margin:0 0 4px 0;font-size:16px}
+    .authors,.venue{color:var(--muted)}
+    .actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .social{display:flex;gap:10px;margin-top:6px}
+    .abstract{margin-top:8px;background:var(--chip);border:1px solid var(--border);padding:10px;border-radius:10px}
+    .avatar{width:120px;height:120px;object-fit:cover;border-radius:12px;border:1px solid var(--border)}
+  </style>
   <script>
-    // Theme toggle with localStorage
-    const applyTheme = (t)=>{
-      document.documentElement.setAttribute('data-theme', t);
-      localStorage.setItem('theme', t);
-    };
+    const applyTheme=(t)=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);};
     document.addEventListener('DOMContentLoaded',()=>{
-      const pref = localStorage.getItem('theme');
-      if(pref){applyTheme(pref);} else {applyTheme('dark');}
+      const pref=localStorage.getItem('theme');applyTheme(pref||'dark');
       document.getElementById('themeToggle').addEventListener('click',()=>{
-        const cur = document.documentElement.getAttribute('data-theme');
-        applyTheme(cur === 'dark' ? 'light' : 'dark');
+        const cur=document.documentElement.getAttribute('data-theme');applyTheme(cur==='dark'?'light':'dark');
       });
     });
   </script>
@@ -101,16 +71,18 @@
           <a title="GitHub" href="https://github.com/" aria-label="GitHub">GitHub</a>
         </div>
       </div>
-      <div class="nav">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#pubs">Publications</a>
-        <a href="#talks">Talks</a>
-                <a href="#photos">Photos</a>
-<a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-        <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
+      <div class="header-right">
+        <img class="avatar" src="images/portrait.jpg" alt="Portrait of Baojun Wu" />
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#research">Research</a>
+          <a href="#pubs">Publications</a>
+          <a href="#talks">Talks</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
+        </nav>
       </div>
     </header>
 
@@ -128,6 +100,14 @@
         <span class="chip">Hyperbolic geometry</span>
         <span class="chip">Probability</span>
       </div>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="list">
+        <li><strong>Oct 2025</strong> — New preprint: <em>SLE Loop Measure and Liouville Quantum Gravity</em> (arXiv:2409.16547).</li>
+        <li><strong>Aug 2025</strong> — Preprint: <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1</em> (arXiv:2408.13133).</li>
+      </ul>
     </section>
 
     <section class="grid">
@@ -150,21 +130,12 @@
       </div>
     </section>
 
-    <section id="news" class="card">
-      <h2>News</h2>
-      <ul class="list">
-        <li><strong>Oct 2025</strong> — New preprint: <em>SLE Loop Measure and Liouville Quantum Gravity</em> (arXiv:2409.16547).</li>
-        <li><strong>Aug 2025</strong> — Preprint: <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1</em> (arXiv:2408.13133).</li>
-      </ul>
-    </section>
-
     <section id="research" class="card">
       <h2>Research Directions</h2>
       <ol class="list">
         <li><strong>Construction of Liouville Field Theory</strong> (especially boundary Liouville): Segal axioms, boundary bootstrap, representation-theoretic aspects.</li>
         <li><strong>Liouville Quantum Gravity & Random Geometry</strong>: SLE loop measure, CLE integrability, imaginary DOZZ formula.</li>
-        <li><strong>Liouville CFT and 3D Virasoro TQFT</strong>: semiclassical limits and connections to hyperbolic geometry.
-        </li>
+        <li><strong>Liouville CFT and 3D Virasoro TQFT</strong>: semiclassical limits and connections to hyperbolic geometry.</li>
       </ol>
     </section>
 
@@ -183,7 +154,6 @@
         </select>
       </div>
       <div id="pubList"></div>
-      <p class="muted">Edit <code>data/publications.json</code> to update this list (or modify the inline fallback dataset in the script at the end of the file).</p>
     </section>
 
     <section id="talks" class="card">
@@ -195,23 +165,12 @@
       </ul>
     </section>
 
-    <section id="photos" class="card">
-      <h2>Photos</h2>
-      <div class="photo-grid">
-        <figure class="photo-card figure">
-          <img loading="lazy" src="images/baojun wu.png" alt="Portrait of Baojun Wu">
-          <figcaption class="figcap">Portrait (replace images/portrait.jpg)</figcaption>
-        </figure>
-        <figure class="photo-card figure">
-          <img loading="lazy" src="images/talk-epfl.jpg" alt="Talk at EPFL">
-          <figcaption class="figcap">Talk at EPFL (replace images/talk-epfl.jpg)</figcaption>
-        </figure>
-        <figure class="photo-card figure">
-          <img loading="lazy" src="images/visit-ihes.jpg" alt="Visit at IHÉS">
-          <figcaption class="figcap">Visit at IHÉS (replace images/visit-ihes.jpg)</figcaption>
-        </figure>
-      </div>
-      <p class="muted">将你的照片放入 <code>/images/</code> 文件夹并使用上面的文件名即可显示；或修改 <code>src</code> 路径。</p>
+    <section id="teaching" class="card">
+      <h2>Teaching</h2>
+      <ul class="list">
+        <li>(Sample) Probability and Measure Theory — TA, 2023–2024.</li>
+        <li>(Sample) Topics in Conformal Field Theory — Guest lectures, 2024.</li>
+      </ul>
     </section>
 
     <section id="contact" class="card">
@@ -220,7 +179,7 @@
         Email: <a href="mailto:wubaojunmathe@outlook.com">wubaojunmathe@outlook.com</a>
         <br>BICMR, Peking University
       </p>
-      <p class="muted">CV: <a href="cv.pdf">download (PDF)</a> &middot; Last updated: 27 Oct 2025</p>
+      <p class="muted">CV: <a href="cv.pdf">download (PDF)</a> · Last updated: 29 Oct 2025</p>
     </section>
 
     <footer>
@@ -230,94 +189,32 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-  
-  <!-- Structured data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Baojun Wu",
-    "url": "",
-    "jobTitle": "Postdoctoral Researcher",
-    "affiliation": {"@type":"Organization","name":"BICMR, Peking University"},
-    "email": "mailto:wubaojunmathe@outlook.com",
-    "knowsAbout": ["Liouville conformal field theory","Liouville quantum gravity","SLE","CLE","Hyperbolic geometry","Probability"],
-    "sameAs": []
-  }
-  </script>
+
+  <!-- Publications renderer (no search, no Toggle BibTeX; per-item Abstract) -->
   <script>
-    // ---- Publications renderer (no search, no BibTeX toggle; per-item Abstract) ----
     (function(){
       const listEl = document.getElementById('pubList');
-      if(!listEl) return;
       const filterEl = document.getElementById('pubFilter');
       const sortEl = document.getElementById('pubSort');
 
       const fallback = [
-         {id:'wu2022annulus', title:'Conformal Bootstrap on the Annulus in Liouville CFT', authors:'Baojun Wu', venue:'arXiv:2203.11830', year:2022, type:'submitted', arxiv:'2203.11830', doi:'', tags:['Liouville CFT'], bibtex:`@article{Wu2022AnnulusBootstrap,
-  title={Conformal Bootstrap on the Annulus in Liouville CFT},
-  author={Baojun Wu},
-  journal={arXiv preprint arXiv:2203.11830},
-  year={2022}
-}`},
-        {id:'baverezwu2023higher', title:'Higher equations of motion at level 2 in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.13900', year:2023, type:'submitted', arxiv:'2312.13900', doi:'', tags:['Liouville CFT'], bibtex:`@article{BaverezWu2023HigherEOM,
-  title={Higher equations of motion at level 2 in Liouville CFT},
-  author={Guillaume Baverez and Baojun Wu},
-  journal={arXiv preprint arXiv:2312.13900},
-  year={2023}
-}`},
-        {id:'baverezwu2023irr', title:'Irreducibility of Virasoro representations in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.07344', year:2023, type:'To appear in The Annals of Probability', arxiv:'2312.07344', doi:'', tags:['Liouville CFT'], bibtex:`@article{BaverezWu2023Irreducibility,
-  title={Irreducibility of Virasoro representations in Liouville CFT},
-  author={Guillaume Baverez and Baojun Wu},
-  journal={arXiv preprint arXiv:2312.07344},
-  year={2023}
-}`},
-        {id:'grw2024boundary', title:'Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms', authors:'Colin Guillarmou, R\'emi Rhodes, Baojun Wu', venue:'arXiv:2408.13133', year:2024, type:'To appear in Transactions of the AMS', arxiv:'2408.13133', doi:'', tags:['Liouville CFT'], bibtex:`@article{GuillarmouRhodesWu2024BoundarySegal,
-  title={Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms},
-  author={Colin Guillarmou and R\'emi Rhodes and Baojun Wu},
-  journal={arXiv preprint arXiv:2408.13133},
-  year={2024}
-}`},
-        {id:'angcaisunwu2024sle', title:'SLE Loop Measure and Liouville Quantum Gravity', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2409.16547', year:2024, type:'preprint', arxiv:'2409.16547', doi:'', tags:['LQG','SLE/CLE'], bibtex:`@article{AngCaiSunWu2024SLELQG,
-  title={SLE Loop Measure and Liouville Quantum Gravity},
-  author={Morris Ang and Gefei Cai and Xin Sun and Baojun Wu},
-  journal={arXiv preprint arXiv:2409.16547},
-  year={2024}
-}`},
-         {id:'cailiuwuzhuang', title:'Three-point connectivity constant for q-state Potts spin clusters', authors:'Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{cailiuwuzhuang,
-  title={Three-point connectivity constant for q-state Potts spin clusters},
-  author={Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang},
-  journal={arXiv preprint arXiv:2510.05850},
-  year={2025}
-}`},
-        {id:'liuwuzhuang', title:'Mixing rate exponent of planar Fortuin-Kasteleyn percolation', authors:'Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2502.09950', year:2025, type:'submitted', arxiv:'2502.09950', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{liuwuzhuang,
-  title={Mixing rate exponent of planar Fortuin-Kasteleyn percolation},
-  author={Haoyu Liu, Baojun Wu, Zijie Zhuang},
-  journal={arXiv preprint arXiv:2502.09950},
-  year={2025}
-}`},
-         {id:'liumingsunwuyang', title:'Turaev-Viro invariant from the modular double of Uq(sl(2;R))', authors:'Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang', venue:'arXiv:2508.05120', year:2025, type:'submitted', arxiv:'2508.05120', doi:'', tags:['Liouville CFT','TQFT','hyperbolic geometry'], bibtex:`@article{liumingsunwuyang,
-  title={Turaev-Viro invariant from the modular double of Uq(sl(2;R))},
-  author={Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang},
-  journal={arXiv preprint arXiv:2508.05120},
-  year={2025}
-}`},
-        {id:'angcaisunwu2021imagDOZZ', title:'Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2107.01788', year:2021, type:'preprint', arxiv:'2107.01788', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{AngCaiSunWu2021ImaginaryDOZZ,
-  title={Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond},
-  author={Morris Ang, Gefei Cai, Xin Sun, Baojun Wu},
-  journal={arXiv preprint arXiv:2107.01788},
-  year={2021}
-}`}
+        {id:'wu2022annulus', title:'Conformal Bootstrap on the Annulus in Liouville CFT', authors:'Baojun Wu', venue:'arXiv:2203.11830', year:2022, type:'submitted', arxiv:'2203.11830', tags:['Liouville CFT']},
+        {id:'baverezwu2023higher', title:'Higher equations of motion at level 2 in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.13900', year:2023, type:'submitted', arxiv:'2312.13900', tags:['Liouville CFT']},
+        {id:'baverezwu2023irr', title:'Irreducibility of Virasoro representations in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.07344', year:2023, type:'To appear in The Annals of Probability', arxiv:'2312.07344', tags:['Liouville CFT']},
+        {id:'grw2024boundary', title:'Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms', authors:'Colin Guillarmou, R\'emi Rhodes, Baojun Wu', venue:'arXiv:2408.13133', year:2024, type:'To appear in Transactions of the AMS', arxiv:'2408.13133', tags:['Liouville CFT']},
+        {id:'angcaisunwu2024sle', title:'SLE Loop Measure and Liouville Quantum Gravity', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2409.16547', year:2024, type:'preprint', arxiv:'2409.16547', tags:['LQG','SLE/CLE']},
+        {id:'cailiuwuzhuang', title:'Three-point connectivity constant for q-state Potts spin clusters', authors:'Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', tags:['LQG','SLE/CLE','statistical physics']},
+        {id:'liuwuzhuang', title:'Mixing rate exponent of planar Fortuin-Kasteleyn percolation', authors:'Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2502.09950', year:2025, type:'submitted', arxiv:'2502.09950', tags:['LQG','SLE/CLE','statistical physics']},
+        {id:'liumingsunwuyang', title:'Turaev-Viro invariant from the modular double of Uq(sl(2;R))', authors:'Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang', venue:'arXiv:2508.05120', year:2025, type:'submitted', arxiv:'2508.05120', tags:['Liouville CFT','TQFT','hyperbolic geometry']},
+        {id:'angcaisunwu2021imagDOZZ', title:'Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2107.01788', year:2021, type:'preprint', arxiv:'2107.01788', tags:['LQG','SLE/CLE','statistical physics']}
       ];
 
       async function load(){
         try{
-          const res = await fetch('data/publications.json',{cache:'no-store'});
-          if(!res.ok) throw new Error('no json');
-          return await res.json();
-        }catch(e){
-          return fallback;
-        }
+          const r = await fetch('data/publications.json',{cache:'no-store'});
+          if(!r.ok) throw 0;
+          return await r.json();
+        }catch{ return fallback; }
       }
 
       function bySort(key){
@@ -329,16 +226,16 @@
       }
 
       function renderItem(p){
-        const doi = p.doi ? `<a class=\"badge\" href=\"https://doi.org/${p.doi}\">DOI</a>` : '';
-        const arxiv = p.arxiv ? `<a class=\"badge\" href=\"https://arxiv.org/abs/${p.arxiv}\">arXiv:${p.arxiv}</a>` : '';
-        const pdf = p.pdf ? `<a class=\"badge\" href=\"${p.pdf}\">PDF</a>` : '';
-        const tags = (p.tags||[]).map(t=>`<span class=\"chip\">${t}</span>`).join(' ');
-        const absPanel = `<div class=\"abstract\" id=\"abs-${p.id}\" hidden>${p.abstract||'Abstract coming soon.'}</div>`;
-        return `<div class=\"pub\">
+        const doi = p.doi ? `<a class="badge" href="https://doi.org/${p.doi}">DOI</a>` : '';
+        const arxiv = p.arxiv ? `<a class="badge" href="https://arxiv.org/abs/${p.arxiv}">arXiv:${p.arxiv}</a>` : '';
+        const pdf = p.pdf ? `<a class="badge" href="${p.pdf}">PDF</a>` : '';
+        const tags = (p.tags||[]).map(t=>`<span class="chip">${t}</span>`).join(' ');
+        const absPanel = `<div class="abstract" id="abs-${p.id}" hidden>${p.abstract||'Abstract coming soon.'}</div>`;
+        return `<div class="pub">
 <h3>${p.title}</h3>
-<div class=\"authors\">${p.authors}</div>
-<div class=\"venue\">${p.venue} · ${p.year} · <span class=\"badge\">${p.type}</span> ${doi} ${arxiv} ${pdf}</div>
-<div class=\"actions\"><button data-id=\"${p.id}\" class=\"toggleAbs\">Abstract</button> ${tags}</div>${absPanel}
+<div class="authors">${p.authors}</div>
+<div class="venue">${p.venue} · ${p.year} · <span class="badge">${p.type}</span> ${doi} ${arxiv} ${pdf}</div>
+<div class="actions"><button data-id="${p.id}" class="toggleAbs">Abstract</button> ${tags}</div>${absPanel}
 </div>`;
       }
 
@@ -356,14 +253,12 @@
         });
       }
 
-      let data = [];
+      let data=[];
       load().then(items=>{
         data = items;
         const rerender = ()=>{
           const type = filterEl.value;
-          const sorted = data
-            .filter(p=> (type==='all' || p.type===type))
-            .sort(bySort(sortEl.value));
+          const sorted = data.filter(p=> (type==='all' || p.type===type)).sort(bySort(sortEl.value));
           listEl.innerHTML = sorted.map(renderItem).join('');
           attach(listEl);
         };
