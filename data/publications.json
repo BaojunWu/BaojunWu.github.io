@@ -29,12 +29,13 @@
   journal={arXiv preprint arXiv:2409.16547},
   year={2024}
 }`},
-         {id:'cailiuwuzhuang', title:'Three-point connectivity constant for q-state Potts spin clusters', authors:'Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{cailiuwuzhuang,
-  title={Three-point connectivity constant for q-state Potts spin clusters},
-  author={Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang},
-  journal={arXiv preprint arXiv:2510.05850},
-  year={2025}
-}`},
+         {
+           id:'cailiuwuzhuang', 
+  title:'Three-point connectivity constant for q-state Potts spin clusters', 
+  authors:'Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang', 
+  venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', 
+  doi:'', tags:['LQG','SLE/CLE','statistical physics'],
+"abstract": Recently, Ang--Cai--Sun--Wu (2024) determined the three-point connectivity constant for two-dimensional critical percolation, confirming a prediction of Delfino and Viti (2010). In this paper, we address the analogous problem for planar critical q-state Potts spin clusters. We introduce a continuum three-point connectivity constant and compute it explicitly. Under the scaling-limit conjecture for Potts spin clusters, this quantity coincides with the scaling limit of the properly normalized probability that three points lie in the same spin cluster. The resulting formula agrees with the imaginary DOZZ formula up to an explicit q-dependent constant with a geometric interpretation. This answers a question from Delfino--Picco--Santachiara--Viti (2013). The proof exploits the coupling between CLE and LQG, together with the BCLE descriptions of q-state Potts scaling limits due to Miller--Sheffield--Werner (2017) and Köhler-Schindler and Lehmkühler (2025).},
         {id:'liuwuzhuang', title:'Mixing rate exponent of planar Fortuin-Kasteleyn percolation', authors:'Haoyu Liu, Baojun Wu, Zijie Zhuang', venue:'arXiv:2502.09950', year:2025, type:'submitted', arxiv:'2502.09950', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{liuwuzhuang,
   title={Mixing rate exponent of planar Fortuin-Kasteleyn percolation},
   author={Haoyu Liu, Baojun Wu, Zijie Zhuang},
