@@ -5,7 +5,7 @@
     "authors": "Baojun Wu",
     "venue": "arXiv:2203.11830",
     "year": 2022,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2203.11830",
     "tags": [
       "Liouville CFT"
@@ -17,7 +17,7 @@
     "authors": "Guillaume Baverez and Baojun Wu",
     "venue": "arXiv:2312.13900",
     "year": 2023,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2312.13900",
     "tags": [
       "Liouville CFT"
@@ -29,7 +29,7 @@
     "authors": "Guillaume Baverez and Baojun Wu",
     "venue": "arXiv:2312.07344",
     "year": 2023,
-    "type": "preprint",
+    "type": "To appear in Annals of Probability",
     "arxiv": "2312.07344",
     "tags": [
       "Liouville CFT"
@@ -41,7 +41,7 @@
     "authors": "Colin Guillarmou, Rémi Rhodes, Baojun Wu",
     "venue": "arXiv:2408.13133",
     "year": 2024,
-    "type": "preprint",
+    "type": "To appear in Transaction of AMS",
     "arxiv": "2408.13133",
     "tags": [
       "Liouville CFT"
@@ -53,7 +53,7 @@
     "authors": "Morris Ang, Gefei Cai, Xin Sun, Baojun Wu",
     "venue": "arXiv:2409.16547",
     "year": 2024,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2409.16547",
     "tags": [
       "LQG",
@@ -66,7 +66,7 @@
     "authors": "Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang",
     "venue": "arXiv:2510.05850",
     "year": 2025,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2510.05850",
     "tags": [
       "LQG",
@@ -80,7 +80,7 @@
     "authors": "Haoyu Liu, Baojun Wu, Zijie Zhuang",
     "venue": "arXiv:2502.09950",
     "year": 2025,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2502.09950",
     "tags": [
       "LQG",
@@ -108,7 +108,7 @@
     "authors": "Morris Ang, Gefei Cai, Xin Sun, Baojun Wu",
     "venue": "arXiv:2107.01788",
     "year": 2021,
-    "type": "preprint",
+    "type": "submitted",
     "arxiv": "2107.01788",
     "tags": [
       "CLE",
