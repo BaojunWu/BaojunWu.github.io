@@ -1,76 +1,118 @@
 [
-{
-  "id": "wu2022annulus",
-  "title": "Conformal Bootstrap on the Annulus in Liouville CFT",
-  "authors": "Baojun Wu",
-  "venue": "arXiv:2203.11830",
-  "year": 2022,
-  "type": "submitted",
-  "arxiv": "2203.11830",
-  "doi": "",
-  "pdf": "",
-  "tags": ["Liouville CFT"],
-  "abstract": "This paper is the first of a series of works on the conformal bootstrap in Liouville conformal field theory (CFT) with boundaries. We focus here on the case of the annulus with two boundary insertions, each of which lies on the different connected components of the boundary. In the course of proving the bootstrap formula, we established several properties on the corresponding annulus conformal blocks:
-1) we show that they converge everywhere on the spectral line and they are continuous with respect to the spectrum and the primary weights.
-2) we relate them to their torus counterparts by rigorously implementing Cardy's doubling trick for boundary CFT,
-3) we solve a conjecture of Martinec on the annulus partition function,
-4) we also extend the bootstrap formula to the one-point case.
-As an application of our bootstrap result, we give an exact formula for the bosonic LQG partition function of the annulus when \gamma\in (0,2). Our paper serves as a key ingredient in the recent derivation of the random moduli for the Brownian annulus by Ang, Remy, and Sun (2022). We also solve several other conjectures relate to torus conformal blocks which arise from physics literature."
-},
-        {id:'baverezwu2023higher', title:'Higher equations of motion at level 2 in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.13900', year:2023, type:'submitted', arxiv:'2312.13900', doi:'', tags:['Liouville CFT'], bibtex:`@article{BaverezWu2023HigherEOM,
-  title={Higher equations of motion at level 2 in Liouville CFT},
-  author={Guillaume Baverez and Baojun Wu},
-  journal={arXiv preprint arXiv:2312.13900},
-  year={2023}
-}`},
-        {id:'baverezwu2023irr', title:'Irreducibility of Virasoro representations in Liouville CFT', authors:'Guillaume Baverez and Baojun Wu', venue:'arXiv:2312.07344', year:2023, type:'To appear in The Annals of Probability', arxiv:'2312.07344', doi:'', tags:['Liouville CFT'], bibtex:`@article{BaverezWu2023Irreducibility,
-  title={Irreducibility of Virasoro representations in Liouville CFT},
-  author={Guillaume Baverez and Baojun Wu},
-  journal={arXiv preprint arXiv:2312.07344},
-  year={2023}
-}`},
-        {id:'grw2024boundary', title:'Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms', authors:'Colin Guillarmou, R\'emi Rhodes, Baojun Wu', venue:'arXiv:2408.13133', year:2024, type:'To appear in Transactions of the AMS', arxiv:'2408.13133', doi:'', tags:['Liouville CFT'], bibtex:`@article{GuillarmouRhodesWu2024BoundarySegal,
-  title={Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms},
-  author={Colin Guillarmou and R\'emi Rhodes and Baojun Wu},
-  journal={arXiv preprint arXiv:2408.13133},
-  year={2024}
-}`},
-        {id:'angcaisunwu2024sle', title:'SLE Loop Measure and Liouville Quantum Gravity', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2409.16547', year:2024, type:'preprint', arxiv:'2409.16547', doi:'', tags:['LQG','SLE/CLE'], bibtex:`@article{AngCaiSunWu2024SLELQG,
-  title={SLE Loop Measure and Liouville Quantum Gravity},
-  author={Morris Ang and Gefei Cai and Xin Sun and Baojun Wu},
-  journal={arXiv preprint arXiv:2409.16547},
-  year={2024}
-}`},
-         {
-           id:'cailiuwuzhuang', 
-  title:'Three-point connectivity constant for q-state Potts spin clusters', 
-  authors:'Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang', 
-  venue:'arXiv:2510.05850', year:2025, type:'submitted', arxiv:'2510.05850', 
-  doi:'', tags:['LQG','SLE/CLE','statistical physics'],
-"abstract": Recently, Ang--Cai--Sun--Wu (2024) determined the three-point connectivity constant for two-dimensional critical percolation, confirming a prediction of Delfino and Viti (2010). In this paper, we address the analogous problem for planar critical q-state Potts spin clusters. We introduce a continuum three-point connectivity constant and compute it explicitly. Under the scaling-limit conjecture for Potts spin clusters, this quantity coincides with the scaling limit of the properly normalized probability that three points lie in the same spin cluster. The resulting formula agrees with the imaginary DOZZ formula up to an explicit q-dependent constant with a geometric interpretation. This answers a question from Delfino--Picco--Santachiara--Viti (2013). The proof exploits the coupling between CLE and LQG, together with the BCLE descriptions of q-state Potts scaling limits due to Miller--Sheffield--Werner (2017) and Köhler-Schindler and Lehmkühler (2025).},
-        {
-  "id": "liu-wu-zhuang-2025-mixing-fk",
-  "title": "Mixing rate exponent of planar Fortuin–Kasteleyn percolation",
-  "authors": "Haoyu Liu, Baojun Wu, Zijie Zhuang",
-  "venue": "arXiv:2502.09950",
-  "year": 2025,
-  "type": "preprint",
-  "arxiv": "2502.09950",
-  "doi": "",
-  "pdf": "",
-  "tags": ["LQG", "SLE/CLE", "statistical physics"],
-  "abstract": "Duminil-Copin and Manolescu (2022) recently proved the scaling relations for planar Fortuin-Kasteleyn (FK) percolation. In particular, they showed that the one-arm exponent and the mixing rate exponent are sufficient to derive the other near-critical exponents. The scaling limit of critical FK percolation is conjectured to be a conformally invariant random collection of loops called the conformal loop ensemble (CLE). In this paper, we define the CLE analog of the mixing rate exponent. Assuming the convergence of FK percolation to CLE, we show that the mixing rate exponent for FK percolation agrees with that of CLE. We prove that the CLE_\kappa mixing rate exponent equals \frac{3 \kappa}{8}-1, thereby answering Question 3 of Duminil-Copin and Manolescu (2022). The derivation of the CLE exponent is based on an exact formula for the Radon-Nikodym derivative between the marginal laws of the odd-level and even-level CLE loops, which is obtained from the coupling between Liouville quantum gravity and CLE."
-}
-         {id:'liumingsunwuyang', title:'Turaev-Viro invariant from the modular double of Uq(sl(2;R))', authors:'Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang', venue:'arXiv:2508.05120', year:2025, type:'submitted', arxiv:'2508.05120', doi:'', tags:['Liouville CFT','TQFT','hyperbolic geometry'], bibtex:`@article{liumingsunwuyang,
-  title={Turaev-Viro invariant from the modular double of Uq(sl(2;R))},
-  author={Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang},
-  journal={arXiv preprint arXiv:2508.05120},
-  year={2025}
-}`},
-        {id:'angcaisunwu2021imagDOZZ', title:'Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond', authors:'Morris Ang, Gefei Cai, Xin Sun, Baojun Wu', venue:'arXiv:2107.01788', year:2021, type:'preprint', arxiv:'2107.01788', doi:'', tags:['LQG','SLE/CLE','statistical physics'], bibtex:`@article{AngCaiSunWu2021ImaginaryDOZZ,
-  title={Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond},
-  author={Morris Ang, Gefei Cai, Xin Sun, Baojun Wu},
-  journal={arXiv preprint arXiv:2107.01788},
-  year={2021}
-}`}
+  {
+    "id": "wu2022annulus",
+    "title": "Conformal Bootstrap on the Annulus in Liouville CFT",
+    "authors": "Baojun Wu",
+    "venue": "arXiv:2203.11830",
+    "year": 2022,
+    "type": "preprint",
+    "arxiv": "2203.11830",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
+  {
+    "id": "baverezwu2023higher",
+    "title": "Higher equations of motion at level 2 in Liouville CFT",
+    "authors": "Guillaume Baverez and Baojun Wu",
+    "venue": "arXiv:2312.13900",
+    "year": 2023,
+    "type": "preprint",
+    "arxiv": "2312.13900",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
+  {
+    "id": "baverezwu2023irr",
+    "title": "Irreducibility of Virasoro representations in Liouville CFT",
+    "authors": "Guillaume Baverez and Baojun Wu",
+    "venue": "arXiv:2312.07344",
+    "year": 2023,
+    "type": "preprint",
+    "arxiv": "2312.07344",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
+  {
+    "id": "grw2024boundary",
+    "title": "Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms",
+    "authors": "Colin Guillarmou, Rémi Rhodes, Baojun Wu",
+    "venue": "arXiv:2408.13133",
+    "year": 2024,
+    "type": "preprint",
+    "arxiv": "2408.13133",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
+  {
+    "id": "angcaisunwu2024sle",
+    "title": "SLE Loop Measure and Liouville Quantum Gravity",
+    "authors": "Morris Ang, Gefei Cai, Xin Sun, Baojun Wu",
+    "venue": "arXiv:2409.16547",
+    "year": 2024,
+    "type": "preprint",
+    "arxiv": "2409.16547",
+    "tags": [
+      "LQG",
+      "SLE/CLE"
+    ]
+  },
+  {
+    "id": "cailiuwuzhuang",
+    "title": "Three-point connectivity constant for q-state Potts spin clusters",
+    "authors": "Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang",
+    "venue": "arXiv:2510.05850",
+    "year": 2025,
+    "type": "preprint",
+    "arxiv": "2510.05850",
+    "tags": [
+      "LQG",
+      "SLE/CLE",
+      "statistical physics"
+    ]
+  },
+  {
+    "id": "liuwuzhuang",
+    "title": "Mixing rate exponent of planar Fortuin–Kasteleyn percolation",
+    "authors": "Haoyu Liu, Baojun Wu, Zijie Zhuang",
+    "venue": "arXiv:2502.09950",
+    "year": 2025,
+    "type": "preprint",
+    "arxiv": "2502.09950",
+    "tags": [
+      "LQG",
+      "SLE/CLE",
+      "statistical physics"
+    ]
+  },
+  {
+    "id": "liumingsunwuyang",
+    "title": "Turaev–Viro invariant from the modular double of Uq(sl(2;R))",
+    "authors": "Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang",
+    "venue": "arXiv:2508.05120",
+    "year": 2025,
+    "type": "preprint",
+    "arxiv": "2508.05120",
+    "tags": [
+      "Liouville CFT",
+      "TQFT",
+      "hyperbolic geometry"
+    ]
+  },
+  {
+    "id": "angcaisunwu2021imagDOZZ",
+    "title": "Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond",
+    "authors": "Morris Ang, Gefei Cai, Xin Sun, Baojun Wu",
+    "venue": "arXiv:2107.01788",
+    "year": 2021,
+    "type": "preprint",
+    "arxiv": "2107.01788",
+    "tags": [
+      "CLE",
+      "Liouville CFT"
+    ]
+  }
 ]
