@@ -4,33 +4,43 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baojun Wu — Mathematics</title>
-  <meta name="description" content="Personal homepage of Baojun Wu — Liouville CFT, Random Geometry, Hyperbolic Geometry" />
+  <meta name="description" content="Baojun Wu — Liouville CFT, LQG, Random Geometry" />
   <meta property="og:title" content="Baojun Wu — Mathematics" />
-  <meta property="og:description" content="Liouville CFT · Random Geometry · Hyperbolic Geometry" />
+  <meta property="og:description" content="Liouville CFT · LQG · Random Geometry · Hyperbolic Geometry" />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0f172a" />
   <style>
-    :root{ --bg:#0b1020; --card:#11172b; --text:#e5e7eb; --muted:#94a3b8; --link:#93c5fd; --chip:#1f2937; --border:#22304c; }
-    [data-theme="light"]{ --bg:#ffffff; --card:#f8fafc; --text:#0f172a; --muted:#475569; --link:#1d4ed8; --chip:#e2e8f0; --border:#e5e7eb; }
+    :root{
+      --bg:#0b1020; --card:#11172b; --text:#e5e7eb; --muted:#94a3b8;
+      --link:#93c5fd; --chip:#1f2937; --border:#22304c;
+    }
+    [data-theme="light"]{
+      --bg:#ffffff; --card:#f8fafc; --text:#0f172a; --muted:#475569;
+      --link:#1d4ed8; --chip:#e2e8f0; --border:#e5e7eb;
+    }
     *{box-sizing:border-box}
     body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text)}
     a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:980px;margin:0 auto;padding:24px}
-    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:12px 0 8px 0}
-    .nav{display:flex;gap:16px;flex-wrap:wrap}
+    header{display:flex;gap:20px;align-items:flex-start;justify-content:space-between;padding:12px 0 8px 0}
+    .header-right{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    .nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
     .nav a{padding:6px 10px;border-radius:999px;background:var(--chip);color:var(--text)}
     .nav a:hover{opacity:.9}
     .theme-btn{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:14px 0}
     h1{font-size:32px;margin:0 0 4px 0;letter-spacing:.2px}
     h2{font-size:22px;margin:0 0 10px 0;border-bottom:1px dashed var(--border);padding-bottom:6px}
+    h3{font-size:18px;margin:10px 0 6px 0}
     .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
     .list{padding-left:18px}
     .badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px}
-    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px}
     .actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
     .abstract{margin-top:8px;background:var(--chip);border:1px solid var(--border);padding:10px;border-radius:10px}
-    .social{display:flex;gap:10px;margin-top:6px}
+    .avatar{width:140px;height:140px;object-fit:cover;border-radius:12px;border:1px solid var(--border)}
+    @media (max-width:600px){.avatar{width:100px;height:100px}}
   </style>
   <script>
     const applyTheme=(t)=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);};
@@ -48,24 +58,28 @@
       <div>
         <h1>Baojun Wu</h1>
         <div class="muted">Postdoctoral Researcher, BICMR (Peking University)</div>
-        <div class="social">
-          <a title="Google Scholar" href="#" aria-label="Google Scholar">GS</a>
-          <a title="ORCID" href="#" aria-label="ORCID">ORCID</a>
-          <a title="arXiv" href="https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=Wu%2C+Baojun&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first" aria-label="arXiv">arXiv</a>
-         
+        <div class="chips">
+          <span class="chip">Liouville CFT</span>
+          <span class="chip">LQG</span>
+          <span class="chip">SLE/CLE</span>
+          <span class="chip">Hyperbolic geometry</span>
+          <span class="chip">Probability</span>
         </div>
       </div>
-      <div class="nav">
-        <a href="#about">About</a>
-        
-        <a href="#employment">Employment</a>
-        <a href="#visits">Visits</a>
-        <a href="#education">Education</a>
-     
-        <a href="#pubs">Publications</a>
-        <a href="#talks">Talks</a>
-        <a href="#contact">Contact</a>
-        <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
+      <div class="header-right">
+        <img class="avatar" src="images/portrait.jpg" alt="Portrait of Baojun Wu" />
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#employment">Employment</a>
+          <a href="#visits">Visits</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#pubs">Publications</a>
+          <a href="#talks">Talks</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="theme-btn" type="button">Toggle theme</button>
+        </nav>
       </div>
     </header>
 
@@ -73,17 +87,19 @@
       <h2>About</h2>
       <p>
         I am a postdoctoral researcher at the <strong>Beijing International Center for Mathematical Research (BICMR)</strong>, Peking University.
-       My general research interests lie in the probabilistic construction of quantum field theory. My work is centered on Liouville conformal field theory (LCFT)</em> and Liouville quantum gravity (LQG)</em>, exploring their connections to statistical physics, hyperbolic geometry, and other areas of mathematical physics
-
+        My work centers on <em>Liouville conformal field theory (CFT)</em>, <em>Liouville quantum gravity (LQG)</em>, and their interfaces with probability, hyperbolic geometry, SLE and CLE.
       </p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <span class="chip">Liouville CFT</span><span class="chip">LQG</span><span class="chip">SLE/CLE</span><span class="chip">Hyperbolic geometry</span><span class="chip">Probability</span>
-      </div>
     </section>
 
-    
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="list">
+        <li><strong>Oct 2025</strong> — New preprint: <em>SLE Loop Measure and Liouville Quantum Gravity</em> (arXiv:2409.16547).</li>
+        <li><strong>Aug 2025</strong> — Preprint: <em>Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1</em> (arXiv:2408.13133).</li>
+      </ul>
+    </section>
 
-    <!-- Three vertical cards: Employment, Visits, Education -->
+    <!-- Three separate vertical sections (top -> middle -> bottom) -->
     <section id="employment" class="card">
       <h2>Employment</h2>
       <ul class="list">
@@ -103,13 +119,20 @@
       <h2>Education</h2>
       <ul class="list">
         <li><strong>Ph.D., Mathematics</strong>, Université Aix–Marseille (2020–2023) — Advisor: Rémi Rhodes</li>
-        <li><strong>M.Sc., Probability</strong>, Université Paris–Saclay (2019–2020) — Advisor: Vincent Vargas</li>
-        <li><strong>Normalien</strong>, École normale supérieure (Ulm) Mention: Très bien (2017–2020)</li>
+        <li><strong>M.Sc., Probability</strong>, Université Paris–Saclay (2019–2020) — Mention: Très bien</li>
+        <li><strong>Normalien</strong>, École normale supérieure (Ulm) (2017–2020)</li>
         <li><strong>B.Sc., Mathematics</strong>, Shandong University (2014–2018)</li>
       </ul>
     </section>
 
-    
+    <section id="research" class="card">
+      <h2>Research Directions</h2>
+      <ol class="list">
+        <li><strong>Construction of Liouville Field Theory</strong> (especially boundary Liouville): Segal axioms, boundary bootstrap, representation-theoretic aspects.</li>
+        <li><strong>Liouville Quantum Gravity & Random Geometry</strong>: SLE loop measure, CLE integrability, imaginary DOZZ formula.</li>
+        <li><strong>Liouville CFT and 3D Virasoro TQFT</strong>: semiclassical limits and connections to hyperbolic geometry.</li>
+      </ol>
+    </section>
 
     <section id="pubs" class="card">
       <h2>Publications & Preprints</h2>
@@ -135,9 +158,6 @@
         <li>Random Geometry and Statistical Physics, University of Pennsylvania (Oct 2022): “Conformal loop ensemble and matrix model”.</li>
         <li>1st NYUSH–Peking–Westlake Joint Conference on Probability (Mar 2024): “Irreducibility of Liouville theory”.</li>
         <li>Probability in Conformal Field Theory, Bernoulli Center (EPFL) (Apr 2024): “Proof of the Delfino–Viti conjecture”.</li>
-         <li>Probabilistic methods in quantum field theory, Hausdorff Center for Mathematics, Bonn, Germany (EPFL) (May 2025): “Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond”.</li>
-         <li>Intersections of Topological Recursion, Conformal Field Theory and Random Geometry, SwissMAP Research Station, Les Diablerets, Switzerland, (Aug 2025): “Proof of the Delfino–Viti conjecture”.</li>
-        <li>CFT: Algebraic, Topological and Probabilistic approaches in Conformal Field Theory, Institut Pascal (Sep 2025): “Turaev-Viro invariant form modular double of Uqsl(2;R)”.</li>
       </ul>
     </section>
 
@@ -156,7 +176,7 @@
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
-  <!-- Publications renderer with arXiv abstract fetch + coauthor linking -->
+  <!-- Publications renderer with arXiv abstract fetch + coauthor links -->
   <script>
   (function(){
     const listEl = document.getElementById('pubList');
@@ -164,7 +184,6 @@
     const filterEl = document.getElementById('pubFilter');
     const sortEl = document.getElementById('pubSort');
 
-    // Load optional coauthor mapping
     let coMap = {};
     fetch('data/coauthors.json', {cache:'no-store'}).then(r=>r.ok?r.json():{}).then(j=>{coMap = j || {};}).catch(()=>{});
 
@@ -283,15 +302,15 @@
         return await r.json();
       }catch{
         return [
-          {"id":"wu2022annulus","title":"Conformal Bootstrap on the Annulus in Liouville CFT","authors":"Baojun Wu","venue":"arXiv:2203.11830","year":2022,"type":"submitted","arxiv":"2203.11830","tags":["Liouville CFT"]},
-          {"id":"baverezwu2023higher","title":"Higher equations of motion at level 2 in Liouville CFT","authors":"Guillaume Baverez and Baojun Wu","venue":"arXiv:2312.13900","year":2023,"type":"submitted","arxiv":"2312.13900","tags":["Liouville CFT"]},
-          {"id":"baverezwu2023irr","title":"Irreducibility of Virasoro representations in Liouville CFT","authors":"Guillaume Baverez and Baojun Wu","venue":"arXiv:2312.07344","year":2023,"type":"To appear in Annals of Probability","arxiv":"2312.07344","tags":["Liouville CFT"]},
-          {"id":"grw2024boundary","title":"Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms","authors":"Colin Guillarmou, Rémi Rhodes, Baojun Wu","venue":"arXiv:2408.13133","year":2024,"type":"To appear in Transaction of AMS","arxiv":"2408.13133","tags":["Liouville CFT"]},
-          {"id":"angcaisunwu2024sle","title":"SLE Loop Measure and Liouville Quantum Gravity","authors":"Morris Ang, Gefei Cai, Xin Sun, Baojun Wu","venue":"arXiv:2409.16547","year":2024,"type":"submitted","arxiv":"2409.16547","tags":["LQG","SLE/CLE"]},
-          {"id":"cailiuwuzhuang","title":"Three-point connectivity constant for q-state Potts spin clusters","authors":"Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang","venue":"arXiv:2510.05850","year":2025,"type":"submitted","arxiv":"2510.05850","tags":["LQG","SLE/CLE","statistical physics"]},
-          {"id":"liuwuzhuang","title":"Mixing rate exponent of planar Fortuin–Kasteleyn percolation","authors":"Haoyu Liu, Baojun Wu, Zijie Zhuang","venue":"arXiv:2502.09950","year":2025,"type":"submitted","arxiv":"2502.09950","tags":["LQG","SLE/CLE","statistical physics"]},
+          {"id":"wu2022annulus","title":"Conformal Bootstrap on the Annulus in Liouville CFT","authors":"Baojun Wu","venue":"arXiv:2203.11830","year":2022,"type":"preprint","arxiv":"2203.11830","tags":["Liouville CFT"]},
+          {"id":"baverezwu2023higher","title":"Higher equations of motion at level 2 in Liouville CFT","authors":"Guillaume Baverez and Baojun Wu","venue":"arXiv:2312.13900","year":2023,"type":"preprint","arxiv":"2312.13900","tags":["Liouville CFT"]},
+          {"id":"baverezwu2023irr","title":"Irreducibility of Virasoro representations in Liouville CFT","authors":"Guillaume Baverez and Baojun Wu","venue":"arXiv:2312.07344","year":2023,"type":"preprint","arxiv":"2312.07344","tags":["Liouville CFT"]},
+          {"id":"grw2024boundary","title":"Conformal Bootstrap for surfaces with boundary in Liouville CFT. Part 1: Segal axioms","authors":"Colin Guillarmou, Rémi Rhodes, Baojun Wu","venue":"arXiv:2408.13133","year":2024,"type":"preprint","arxiv":"2408.13133","tags":["Liouville CFT"]},
+          {"id":"angcaisunwu2024sle","title":"SLE Loop Measure and Liouville Quantum Gravity","authors":"Morris Ang, Gefei Cai, Xin Sun, Baojun Wu","venue":"arXiv:2409.16547","year":2024,"type":"preprint","arxiv":"2409.16547","tags":["LQG","SLE/CLE"]},
+          {"id":"cailiuwuzhuang","title":"Three-point connectivity constant for q-state Potts spin clusters","authors":"Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang","venue":"arXiv:2510.05850","year":2025,"type":"preprint","arxiv":"2510.05850","tags":["LQG","SLE/CLE","statistical physics"]},
+          {"id":"liuwuzhuang","title":"Mixing rate exponent of planar Fortuin–Kasteleyn percolation","authors":"Haoyu Liu, Baojun Wu, Zijie Zhuang","venue":"arXiv:2502.09950","year":2025,"type":"preprint","arxiv":"2502.09950","tags":["LQG","SLE/CLE","statistical physics"]},
           {"id":"liumingsunwuyang","title":"Turaev–Viro invariant from the modular double of Uq(sl(2;R))","authors":"Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang","venue":"arXiv:2508.05120","year":2025,"type":"preprint","arxiv":"2508.05120","tags":["Liouville CFT","TQFT","hyperbolic geometry"]},
-          {"id":"angcaisunwu2021imagDOZZ","title":"Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond","authors":"Morris Ang, Gefei Cai, Xin Sun, Baojun Wu","venue":"arXiv:2107.01788","year":2021,"type":"submitted","arxiv":"2107.01788","tags":["CLE","Liouville CFT"]}
+          {"id":"angcaisunwu2021imagDOZZ","title":"Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond","authors":"Morris Ang, Gefei Cai, Xin Sun, Baojun Wu","venue":"arXiv:2107.01788","year":2021,"type":"preprint","arxiv":"2107.01788","tags":["CLE","Liouville CFT"]}
         ];
       }
     }
