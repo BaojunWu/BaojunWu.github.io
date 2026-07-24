@@ -17,7 +17,7 @@
     "authors": "Guillaume Baverez and Baojun Wu",
     "venue": "To appear in Probability and Mathematical Physics",
     "year": 2026,
-    "type": "journal",
+    "type": "Journal",
     "arxiv": "2312.13900",
     "tags": [
       "Liouville CFT"
@@ -29,7 +29,7 @@
     "authors": "Guillaume Baverez and Baojun Wu",
     "venue": "To appear in Annals of Probability",
     "year": 2023,
-    "type": "journal",
+    "type": "Journal",
     "arxiv": "2312.07344",
     "tags": [
       "Liouville CFT"
@@ -41,7 +41,7 @@
     "authors": "Colin Guillarmou, Rémi Rhodes, Baojun Wu",
     "venue": "To appear in Transactions of AMS",
     "year": 2024,
-    "type": "journal",
+    "type": "Journal",
     "arxiv": "2408.13133",
     "tags": [
       "Liouville CFT"
@@ -64,7 +64,7 @@
     "id": "cailiuwuzhuang",
     "title": "Three-point connectivity constant for q-state Potts spin clusters",
     "authors": "Gefei Cai, Haoyu Liu, Baojun Wu, Zijie Zhuang",
-    "venue": "submitted",
+    "venue": "Submitted",
     "year": 2025,
     "type": "preprint",
     "arxiv": "2510.05850",
@@ -80,7 +80,7 @@
     "authors": "Haoyu Liu, Baojun Wu, Zijie Zhuang",
     "venue": "To appear in Communications in Mathematical Physics",
     "year": 2026,
-    "type": "journal",
+    "type": "Journal",
     "arxiv": "2502.09950",
     "tags": [
       "LQG",
@@ -108,7 +108,7 @@
     "authors": "Tianyue Liu, Shuang Ming, Xin Sun, Baojun Wu, Tian Yang",
     "venue": "arXiv:2511.20953",
     "year": 2025,
-    "type": "preprint",
+    "type": "Submitted",
     "arxiv": "2511.20953",
     "tags": [
       "Liouville CFT",
@@ -120,10 +120,9 @@
     "id": "angcaisunwu2021imagDOZZ",
     "title": "Integrability of Conformal Loop Ensemble: Imaginary DOZZ Formula and Beyond",
     "authors": "Morris Ang, Gefei Cai, Xin Sun, Baojun Wu",
-    "venue": "Accepted for publication in Journal of the American Mathematical
-Society",
+    "venue": "Accepted by Journal of the American Mathematical Society",
     "year": 2026,
-    "type": "journal",
+    "type": "Journal",
     "arxiv": "2107.01788",
     "tags": [
       "CLE",
@@ -136,7 +135,7 @@ Society",
     "authors": "Morris Ang, Gefei Cai, Jesper Lykke Jacobsen, Rongvoram Nivesvivat, Paul Roux, Xin Sun, Baojun Wu",
     "venue": " ",
     "year": 2026,
-    "type": "preprint",
+    "type": "Submitted",
     "arxiv": "2604.05503",
     "tags": [
       "statistical physics"
