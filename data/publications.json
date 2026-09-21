@@ -1,4 +1,29 @@
 [
+{
+    "id": "WX2026",
+    "title": "Ward identities: a geometric point of view and applications",
+    "authors": "Baojun Wu, Shengjing Xu",
+    "venue": "https://arxiv.org/abs/2608.11550",
+    "year": 2026,
+    "type": "Preprint",
+    "arxiv": "2608.11550",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
+  
+   {
+    "id": "SWX2026",
+    "title": "String equation for conformal loop ensemble on Liouville quantum gravity sphere",
+    "authors": "Xin Sun, Baojun Wu, Shengjing Xu",
+    "venue": "https://arxiv.org/abs/2609.17826",
+    "year": 2026,
+    "type": "Preprint",
+    "arxiv": "2609.17826",
+    "tags": [
+      "Liouville CFT"
+    ]
+  },
   {
     "id": "wu2022annulus",
     "title": "Conformal Bootstrap on the Annulus in Liouville CFT",
